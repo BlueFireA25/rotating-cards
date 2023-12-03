@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== TYPOGRAPHY ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--=============== ICONSCOUT ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Rotating Card - Sebastián Ibagué Castro</title>
+  </head>
+  <body>
+    <div class="tags">
+      <div class="tags__item">
+        <i class="uil uil-tag-alt"></i><span>HTML</span>
+      </div>
+      <div class="tags__item">
+        <i class="uil uil-tag-alt"></i><span>CSS</span>
+      </div>
+    </div>
+    <div class="cards__container">
+      <div>
+        <label id="summary">
+          <input type="checkbox" />
+          <article class="card">
+            <div class="card__front">
+              <header class="card__header">
+                <h2 class="card__header--title">Summary</h2>
+                <i class="uil uil-ellipsis-v card__header--icon"></i>
+              </header>
+              <var class="card__value color-blue">21</var>
+              <h3 class="card__task color-blue">Due Task</h3>
+              <h4 class="card__completed">Completed: 13</h4>
+            </div>
+            <div class="card__back">
+              <header class="card__header">
+                <h2 class="card__header--title">Summary</h2>
+                <i class="uil uil-times card__header--icon"></i>
+              </header>
+              <p class="card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis a fugiat laborum dolores vel, officiis perferendis
+                deserunt
+              </p>
+            </div>
+          </article>
+        </label>
+      </div>
+
+      <div>
+        <label id="summary">
+          <input type="checkbox" />
+          <article class="card">
+            <div class="card__front">
+              <header class="card__header">
+                <h2 class="card__header--title">Overdue</h2>
+                <i class="uil uil-ellipsis-v card__header--icon"></i>
+              </header>
+              <var class="card__value color-red">17</var>
+              <h3 class="card__task color-red">Projects</h3>
+              <h4 class="card__completed">Yesterday: 9</h4>
+            </div>
+            <div class="card__back">
+              <header class="card__header">
+                <h2 class="card__header--title">Overdue</h2>
+                <i class="uil uil-times card__header--icon"></i>
+              </header>
+              <p class="card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis a fugiat laborum dolores vel, officiis perferendis
+                deserunt
+              </p>
+            </div>
+          </article>
+        </label>
+      </div>
+
+      <div>
+        <label id="summary">
+          <input type="checkbox" />
+          <article class="card">
+            <div class="card__front">
+              <header class="card__header">
+                <h2 class="card__header--title">Features</h2>
+                <i class="uil uil-ellipsis-v card__header--icon"></i>
+              </header>
+              <var class="card__value color-green">38</var>
+              <h3 class="card__task color-green">Proposals</h3>
+              <h4 class="card__completed">Implemented: 6</h4>
+            </div>
+            <div class="card__back">
+              <header class="card__header">
+                <h2 class="card__header--title">Features</h2>
+                <i class="uil uil-times card__header--icon"></i>
+              </header>
+              <p class="card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Facilis a fugiat laborum dolores vel, officiis perferendis
+                deserunt
+              </p>
+            </div>
+          </article>
+        </label>
+      </div>
+    </div>
+    <div class="github">
+      <a href="https://github.com/BlueFireA25/rotating-cards" target="_blank">
+        <i class="uil uil-github-alt"></i
+      ></a>
+    </div>
+  </body>
+</html>
