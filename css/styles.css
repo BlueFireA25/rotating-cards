@@ -24,23 +24,29 @@ h4 {
 
 body {
   overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  background: url("../assets/img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 /*==================== TAGS ====================*/
 .tags {
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +72,9 @@ body {
 
 /*==================== CARDS ====================*/
 .cards__container {
+  position: relative;
   display: grid;
   gap: 2.4rem;
-  place-items: center;
   grid-template-columns: repeat(1, auto);
   margin-bottom: 4.8rem;
 }
@@ -171,6 +177,7 @@ input:checked ~ .card .card__front {
 
 /*==================== SOCIAL ====================*/
 .github {
+  position: sticky;
   margin-bottom: 2.4rem;
 }
 
@@ -188,6 +195,10 @@ input:checked ~ .card .card__front {
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
   .cards__container {
     grid-template-columns: repeat(2, auto);
   }
@@ -195,6 +206,10 @@ input:checked ~ .card .card__front {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .container {
+    height: 100vh;
+  }
+
   .cards__container {
     display: flex;
     justify-content: center;
